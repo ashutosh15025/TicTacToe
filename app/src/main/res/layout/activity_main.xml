@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#9AF4DB"
+    >
+
+
+    <TextView
+        android:id="@+id/player"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center_horizontal"
+      android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+    android:text="Player 1's turn"
+        android:textColor="@color/tred"
+        android:textSize="28dp"
+        android:textStyle="italic">
+
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/tictactoeimage"
+        android:alpha="0.4">
+
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:alpha="0.8"
+                android:src="@drawable/white"
+                android:layout_marginLeft="10dp"
+                android:onClick="addimage"
+                android:tag="1"></ImageView>
+
+            <ImageView
+                android:id="@+id/image2"
+                android:alpha="0.8"
+                android:src="@drawable/white"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginLeft="20dp"
+                android:onClick="addimage"
+                android:tag="2">
+
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/image3"
+                android:alpha="0.8"
+                android:src="@drawable/white"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginLeft="20dp"
+                android:onClick="addimage"
+                android:tag="3"></ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="198dp"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image4"
+                android:alpha="0.8"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/white"
+                android:onClick="addimage"
+                android:tag="4"></ImageView>
+
+            <ImageView
+                android:id="@+id/image5"
+                android:layout_width="110dp"
+                android:alpha="0.8"
+                android:src="@drawable/white"
+                android:layout_height="110dp"
+                android:layout_marginLeft="20dp"
+                android:onClick="addimage"
+                android:tag="5">
+
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/image6"
+                android:alpha="0.8"
+                android:layout_width="110dp"
+                android:src="@drawable/white"
+                android:layout_height="110dp"
+                android:layout_marginLeft="20dp"
+                android:onClick="addimage"
+                android:tag="6"></ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="330dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:alpha="0.8"
+                android:id="@+id/image7"
+                android:layout_width="110dp"
+                android:src="@drawable/white"
+                android:layout_height="110dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="addimage"
+                android:tag="7"></ImageView>
+
+            <ImageView
+                android:alpha="0.8"
+                android:id="@+id/image8"
+                android:layout_width="110dp"
+                android:src="@drawable/white"
+                android:layout_height="110dp"
+                android:layout_marginLeft="20dp"
+                android:onClick="addimage"
+                android:tag="8">
+
+
+            </ImageView>
+
+            <ImageView
+                android:alpha="0.8"
+                android:src="@drawable/white"
+                android:id="@+id/image9"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginLeft="20dp"
+                android:onClick="addimage"
+                android:tag="9"></ImageView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="100dp"
+       >
+       <TextView
+           android:alpha="0.7"
+           android:layout_width="202dp"
+           android:layout_marginLeft="3dp"
+           android:layout_height="match_parent"
+           android:id="@+id/player1"
+           android:textColor="#239A82"
+           android:hint="Player1"
+           android:textSize="30dp"
+           android:gravity="center"
+           android:background="@drawable/textshape"
+           >
+
+       </TextView>
+       <TextView
+           android:layout_width="202dp"
+           android:alpha="0.7"
+           android:hint="Player2 \n 1"
+           android:gravity="center"
+           android:textSize="30dp"
+           android:layout_height="match_parent"
+           android:background="@drawable/textshape"
+           android:id="@+id/player2">
+
+       </TextView>
+   </LinearLayout>
+
+    <Button
+        android:id="@+id/newgame"
+        android:layout_width="150dp"
+
+        android:layout_height="50dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="650dp"
+        android:text="New Game"
+        android:onClick="newgame">
+
+    </Button>
+
+
+</RelativeLayout>
